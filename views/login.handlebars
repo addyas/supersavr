@@ -29,14 +29,22 @@
         </nav>
     
     
-    
-        <div class="col-xs-12">
-        <div class="options">
-            <center>
-                <img src="image/logo.png" id="logo">
-                <div class="col-xs-12">
+       <div class="container-fluid">
+         <div class="row">
+         <div class="col-sm-4"></div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="logo">
+          <img src="image/logo.png" id="logo">
+          </div>
+        </div>
+        <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-xs-12 col-sm-4">
                     
-                    <ul class="nav nav-pills" style="margin-bottom:20px;">
+                    <ul class="nav nav-pills nav-pills-custom" style="margin-bottom:20px;">
                         <li class="active"><a href="#login" data-toggle="tab"><h5>Login</h5></a></li>
                         <li><a href="#signup" data-toggle="tab"><h5>Sign Up</h5></a></li>
                         
@@ -57,7 +65,7 @@
                             </form>
                         </div>
                         
-                    
+                    <!--SIGNUP FORM-->
                     <div id="signup" class="tab-pane fade">
                             <form method="get" action="/signup">
                                 <div align="left"><p style="line-height: 0.1"><b>Choose your username*</b></p></div> 
@@ -77,10 +85,12 @@
                                 
                             </form>
                         </div>
+                </div><!--colxs12-->
+                <div class="col-sm-4">
                 </div>
-            </center>
-        </div>
-    </div>
+                </div><!--row-->
+          
+    </div><!--container-->
     {{> googleAnalytics}}
 </body>
 </html>
